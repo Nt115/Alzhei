@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        max-width: 50px;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .heading {
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .call-button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .call-button:hover {
+      background-color: #ff6600; /* Darker Orange */
+    }
+
+    .tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .tab img {
+    width: 40px;
+    height: 40px;
+  }
+
+  </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo" class="logo">
+  <div class="content">
+    <h2 class="heading">Call Patient</h2>
+    <button class="call-button" onclick="callPatient('+919600123871')">Call</button>
+  </div>
+  <div class="tab">
+    <a href="home.html"><img src="home-icon.svg" alt="home"></a>
+    <a href="monitor.html"><img src="scan-icon.svg" alt="Monitor"></a>
+    <a href="medal.html"><img src="medal-icon.svg" alt="Medal"></a>
+    <a href="user.html"><img src="user-icon.svg" alt="User"></a>
+  </div>
+
+  <script>
+    function callPatient(phoneNumber) {
+      window.location.href = `tel:${phoneNumber}`;
+    }
+  </script>
+
+</body>
+</html>

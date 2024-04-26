@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('honeycomb.jpeg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .monitor-icon {
+    position: relative;
+    max-width: 20px;
+
+  }
+
+  .data-icon {
+    position: relative;
+    max-width: 20px;
+
+  }
+
+  .call-icon {
+    position: relative;
+    max-width: 30px;
+
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 50px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 100px;
+    border-radius: 10px;
+  }
+  
+  .hexagon-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .hexagon {
+    position: relative;
+    width: 100px;
+    height: 70px; 
+    background-color: orange;
+    border: 2px solid orange;
+    text-align: center;
+  }
+
+  .call {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .hexagon.call::after {
+    top: 25%;
+    width: 0;
+    border-top: 23.09px solid orange;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: relative;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 60%;
+    border-bottom: 23.09px solid orange;
+  }
+  
+  .hexagon:after {
+    top: 40%;
+    width: 0;
+    border-top: 23.09px solid orange;
+  }
+  
+  .hexagon button {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  .hexagon span {
+    display: block;
+    color: white;
+    text-align: center;
+  }
+  
+  .reach-out-text {
+    color: black;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+  .help-desk-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-desk-button:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .tab img {
+    width: 40px;
+    height: 40px;
+  }
+  

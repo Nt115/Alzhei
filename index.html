@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="logo.png" alt="Logo" class="logo">
+  <div class="container">
+    <div class="content">
+      <h1>Login</h1>
+      <form id="loginForm" onsubmit="return false;">
+        <div class="input-group">
+          <label for="username" style="color: orange;">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password" style="color: orange;">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+          <label for="phone" style="color: orange;">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+          <small style="color: orange;">Format: 1234567890</small>
+        </div>
+        <button onclick="signUp()">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <div class="tab">
+    <a href="home.html"><img src="home-icon.svg" alt="home"></a>
+    <a href="monitor.html"><img src="scan-icon.svg" alt="Monitor"></a>
+    <a href="medal.html"><img src="medal-icon.svg" alt="Medal"></a>
+    <a href="user.html"><img src="user-icon.svg" alt="User"></a>
+  </div>
+
+</body>
+</html>

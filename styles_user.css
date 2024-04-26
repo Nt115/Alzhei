@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Background.jpeg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 50px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .user-info {
+    margin-bottom: 30px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .username {
+    color: orange;
+    margin: 5px 0;
+  }
+  
+  .patient-name {
+    color: #FFD700; /* Yellow */
+    margin: 5px 0;
+  }
+  
+  .email,
+  .password {
+    margin: 5px 0;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-container {
+    margin: 0 10px;
+  }
+  
+  .contact-expert-button,
+  .help-desk-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-expert-button:hover,
+  .help-desk-button:hover {
+    background-color: #FFD700; /* Yellow */
+    border-color: #FFD700; /* Yellow */
+  }
+  
+  .tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .tab img {
+    width: 40px;
+    height: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }

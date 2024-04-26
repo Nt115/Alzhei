@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('honeycomb.jpeg'); /* Replace 'background.jpg' with your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 50px;
+}
+
+.monitor-container {
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.greeting {
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 60%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.username {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.monitor-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.monitor-box {
+  width: 95%;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.monitor-column {
+  width: 50%;
+}
+
+.box1 {
+  background-color: #FFD700; /* Yellow */
+  width: 80%;
+  text-align: left;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  padding-right: 0.3em;
+}
+
+.box2 {
+  background-color: #FFA500; /* Orange */
+  height: 221.5px;
+  text-align: left;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  padding-right: 0.3em;
+}
+
+.box3 {
+  background-color: #FFD700; /* Yellow */
+  width: 40.5%;
+  text-align: center;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  padding-right: 0.3em;
+}
+
+.box4 {
+  background-color: #FFA500; /* Orange */
+  position: relative;
+  text-align: left;
+  width: 80%;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  padding-right: 0.3em;
+}
+
+.box5 {
+  background-color: #FFA500; /* Yellow */
+  width: 45%;
+  margin-right: 0px;
+  margin-left: 10px;
+  text-align: center;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  padding-right: 0.3em;
+}
+
+.box6 {
+  background-color: #FFA500; /* Orange */
+  width: 98%;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 1em;
+}
+
+.title {
+  font-weight: bold;
+  color: rgb(71, 37, 37);
+  font-size: 120%;
+}
+.date {
+  font-size: 50%;
+  color: white;
+  font-weight: bold;
+}
+.subtitle {
+  color: rgb(71, 37, 37);
+  font-size: 45%;
+  font-weight: bold;
+}
+
+.title.sub {
+  font-size: 70%;
+}
+.graph-icon{
+  float: right;
+  max-width: 40%;
+}
+
+.tab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab img {
+  width: 40px;
+  height: 40px;
+}
