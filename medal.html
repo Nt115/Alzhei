@@ -1,66 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient Details</title>
-  <link rel="stylesheet" href="styles_medal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Type Detector</title>
+    <link rel="stylesheet" href="styles_medal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 <body>
     <img src="logo.png" alt="Logo" class="logo">
-  <div class="container">
-    <div class="content">
-      <h2 class="heading">Patient Activites</h2>
-      <table class="medal-table">
-        <thead>
-          <tr>
-            <th>Task</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Difficulty</th>
-            <th>Completed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bathing</td>
-            <td>8:00 AM</td>
-            <td>8:30 AM</td>
-            <td>Medium</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Breakfast</td>
-            <td>9:00 AM</td>
-            <td>9:30 AM</td>
-            <td>Easy</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Walk</td>
-            <td>10:00 AM</td>
-            <td>10:30 AM</td>
-            <td>Hard</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>Exercise</td>
-            <td>11:00 AM</td>
-            <td>11:30 AM</td>
-            <td>Medium</td>
-            <td>Yes</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container">
+        <h1>Task Type Detector</h1>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Task</th>
+                </tr>
+            </thead>
+            <tbody id="taskBody"></tbody>
+        </table>
     </div>
-  </div>
 
-  <div class="tab">
-    <a href="home.html"><img src="home-icon.svg" alt="home"></a>
-    <a href="monitor.html"><img src="scan-icon.svg" alt="Monitor"></a>
-    <a href="medal.html"><img src="medal-icon.svg" alt="Medal"></a>
-    <a href="user.html"><img src="user-icon.svg" alt="User"></a>
-  </div>
+    <div class="tab">
+        <a href="home.html"><img src="home-icon.svg" alt="home"></a>
+        <a href="monitor.html"><img src="scan-icon.svg" alt="Monitor"></a>
+        <a href="medal.html"><img src="medal-icon.svg" alt="Medal"></a>
+        <a href="user.html"><img src="user-icon.svg" alt="User"></a>
+      </div>
 
+    <script src="medal_script.js"></script>
 </body>
 </html>
